@@ -1,0 +1,125 @@
+{
+  "areaCode": "17",
+  "areaName": "松江区",
+  "projectName": "城市网格化管理",
+  "interfaceType": "base",
+  "clientType": "17",
+  "secrets": {
+    "appId": "wwc11834673dba4d44",
+    "agentId": "1000742",
+    "appSecret": "0Lk_zvmnxFf3U7QkyVBIDjCi8qia9jVvjHSzr_egDFQ",
+    "weappAppId": "wx965b2fa48dac02d7",
+    "weappAppSecret": "0a462600313ef38a1c79fc378a5b8dd9",
+    "zwAppId": "ww4d8c2a7f4f517a13",
+    "zwAppKey": "1001198",
+    "zwAppSecret": "5e87de120db34c3b940af055c03dc15d"
+  },
+  "location": {
+    "flag": true,
+    "time": 5
+  },
+  "urls": [
+    {
+      "govWechat": "https://sjwg.idp.songjiang.gov.cn/gov-wechat/",
+      "ssbConfing": "https://sjwg.idp.songjiang.gov.cn/wechat-java/",
+      "wxConfing": "https://sjwg.idp.songjiang.gov.cn/wechat-api/",
+      "mediaUrl": "https://sjwg.idp.songjiang.gov.cn/file-service/",
+      "mapUrl": "https://gis.shucm.cn/CGGisShare/GisShareApp3D.html?cid=NzM3MDg3ZWQwMTUwOTgwMQ==",
+      "esUrl": "",
+      "dataApi": "数据分析的接口",
+      "deviceApi": "",
+      "messageApi": "",
+      "surveyUrl": "",
+      "formIframeUrl": "https://sjwg.idp.songjiang.gov.cn/form/#/thirdPage/report?formCode=",
+      "updateMapUrl": "https://cimnet.zjw.sh.gov.cn:2008/wghGisService/rest/services/wx/citygisnewquery/FeatureServer/16",
+      "tdMapToken": "https://cimnet.zjw.sh.gov.cn:2008",
+      "tdMapUrl": "https://gis.shucm.cn/GisShareTdt/GisShareApp3D.html?cid=2218cc4fb7e31c2f1a737200d4c728d435a7e3c27a75a7b9ab90c17a305380e4d3651ec3cc87c4a84974f1608555b5dd2a12d9b9585d3b4de9e295fff6a8f64966f8c0dac256f2735d8ac56e328d99e04dd185b1a2c8f450b39425df45719eff29495705c91c579a64258e8d5d544173d9443eeb5179d4ea1c8aa2ec797c1673"
+    }
+  ],
+  "permissions": [
+    {
+      "menuId": "DutyManage",
+      "blackList": [""],
+      "menuName": "勤务管理",
+      "isShow": false
+    },
+    {
+      "menuId": "dealCase",
+      "blackList": [""],
+      "menuName": "案件办理",
+      "isShow": true
+    },
+    {
+      "menuId": "report",
+      "blackList": [""],
+      "menuName": "上报",
+      "isShow": true
+    },
+    {
+      "menuId": "DataBoard",
+      "blackList": [""],
+      "menuName": "数据看板",
+      "isShow": false
+    },
+    {
+      "menuId": "myCase",
+      "blackList": [""],
+      "menuName": "我的案件",
+      "isShow": true
+    }
+  ],
+  "hasConsole": ["15821730872"],
+  "mapTestUser": [""],
+  "nav": {
+    "yxtd": false,
+    "zxdc": false
+  },
+  "todoList": [
+    {
+      "label": "待核实",
+      "num": 0,
+      "color_bg": "#f4f8ff",
+      "icon": "dhs",
+      "color": "#5a8ceb",
+      "route": "/dealCase",
+      "query": { "caseType": "待核实" }
+    },
+    {
+      "label": "待核查",
+      "num": 0,
+      "color_bg": "#faf5ff",
+      "icon": "dhc",
+      "color": "#9f69e0",
+      "route": "/dealCase",
+      "query": { "caseType": "待核查" }
+    },
+    {
+      "label": "待接单",
+      "num": 0,
+      "color_bg": "#fff8f9",
+      "icon": "djd",
+      "color": "#f76d93",
+      "route": "/dealCase",
+      "query": { "caseType": "待接单" }
+    },
+    {
+      "label": "待处理",
+      "num": 0,
+      "color_bg": "#f8f8fd",
+      "icon": "dcl",
+      "color": "#8786e1",
+      "route": "/dealCase",
+      "query": { "caseType": "待处理" }
+    },
+    {
+      "label": "待指挥",
+      "num": 0,
+      "color_bg": "#ebfefc",
+      "icon": "dzh",
+      "color": "#35d8c3",
+      "route": "/dealCase",
+      "query": { "caseType": "待指挥" }
+    }
+  ],
+  "layerName": "农村经营性自建房"
+}

@@ -1,0 +1,129 @@
+.gisMap-box {
+  width: 100%;
+  height: 100%;
+  float: left;
+.popup{
+    width: 100%;
+    height: 100vh;
+    float: left;
+    background-color: #edf0f4 !important;
+//     border:1px solid red;
+//    box-sizing: border-box;
+
+}
+.address-input {
+  width: calc(100% - 80px);
+  height: 200px;
+  float: left;
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  .left {
+    width: 420px;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: $font-size-72;
+    color: #646566;
+    text-align: left;
+    font-family: NotoSansCJK-Regular;
+  }
+  .right {
+    width: calc(100% - 470px);
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: $font-size-72;
+    color: #646566;
+    text-align: left;
+    font-family: NotoSansCJK-Regular;
+    margin: 0 0 0 50px;
+  }
+}
+
+.function-box {
+    .back-btn {
+      width: 320px;
+      height: 320px;
+      float: left;
+      position: absolute;
+      background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/sign/back.png") no-repeat;
+      background-size: 100% 100%;
+      right: 0;
+      bottom: 160px;
+    }
+    .wz-btn {
+      width: 320px;
+      height: 320px;
+      float: left;
+      position: absolute;
+      background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/sign/wz.png") no-repeat;
+      background-size: 100% 100%;
+      right: 0;
+      bottom: 450px;
+    }
+    .layer-btn {
+      width: 320px;
+      height: 320px;
+      float: left;
+      position: absolute;
+      background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/sign/layer.png") no-repeat;
+      background-size: 100% 100%;
+      right: 0;
+      bottom: 980px;
+    }
+  }
+.btn {
+    width: calc(100% - 60px);
+    height: 200px;
+    margin: 25px 30px;
+    float: left;
+    border-radius: 15px;
+  }
+  .sure-btn {
+    background-color: $primary;
+    color: $white;
+    position: absolute;
+    border-color: $primary !important;
+    bottom: 0;
+  }
+  .cancle-btn {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    float: left;
+    position: absolute;
+    background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/sign/back.png") no-repeat;
+    background-size: 100% 100%;
+    right: 0;
+    bottom: 740px;
+  }
+  .center-point{
+      width:120px;
+      height: 120px;
+      position: absolute;
+      left: calc(50% - 60px);
+      top: calc(50% - 60px);
+      background:url("https://zwwx.3h-weixin.com/zwwx-test/static/images/other/center_point.png");
+      background-size: 100% 100%;
+      background-position:center center;
+  }
+  .gis-back {
+    position: absolute;
+    width: 320px;
+      height: 320px;
+      float: left;
+      position: absolute;
+      background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/sign/wz.png") no-repeat;
+      background-size: 100% 100%;
+      right: 0;
+      bottom: 450px;
+  }
+}

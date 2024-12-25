@@ -1,0 +1,142 @@
+{
+    "areaCode": "12",
+    "areaName":"闵行区",
+    "projectName":"城运通",
+    "interfaceType":"base",
+    "clientType": "2",
+    "secrets":{
+        "appId":"wwc11834673dba4d44",
+        "agentId":"1000284",
+        "appSecret":"b1bBKebfGC-YM1uX8Hk2eaxLUlGZKJNsAIYtISbvtIc"
+    },
+    "location":{
+        "flag":true,
+        "time":30
+    },
+    "urls":[
+        { 
+            "govWechat":"https://shmhdldqywx.shmh.gov.cn/gov-wechat",
+            "wxConfing":"https://shmhdldqywx.shmh.gov.cn/wechat-api",
+            "mediaUrl":"https://shmhdldqywx.shmh.gov.cn/file-service", 
+            "mapUrl": "https://map2.3h-weixin.com/CGGisShare/GisShareApp3D.html",
+            "dataApi":"数据分析的接口",
+            "deviceApi": "http://58.33.93.42:8088",
+            "surveyUrl": "http://39.105.103.72",
+            "yjUrl": "https://yjglj.shmh.gov.cn/cytapp/h5api"             
+        }
+    ],
+    "permissions": [
+        {
+            "menuId": "DutyManage",
+            "blackList": ["13162881588", "13916202369", "13391057952", "13816208743", "13761672303", "13661964946", "15090242465", "15142361837"],
+            "menuName": "勤务管理",
+            "isShow": false
+        },
+        {
+            "menuId": "dealCase",
+            "blackList": ["13162881588", "13916202369", "13391057952", "13816208743", "13761672303", "13661964946", "15090242465", "15142361837"],
+            "menuName": "案件办理",
+            "isShow": true
+        },
+        {
+            "menuId": "report",
+            "blackList": ["13162881588", "13916202369", "13391057952", "13816208743", "13761672303", "13661964946", "15090242465", "15142361837"],
+            "menuName": "上报",
+            "isShow": true
+        },
+        {
+            "menuId": "DataBoard",
+            "blackList": ["13162881588", "13916202369", "13391057952", "13816208743", "13761672303", "13661964946", "15090242465", "15142361837"],
+            "menuName": "数据看板",
+            "isShow": false
+        },
+        {
+            "menuId": "myCase",
+            "blackList": ["13162881588", "13916202369", "13391057952", "13816208743", "13761672303", "13661964946", "15090242465", "15142361837"],
+            "menuName": "个人中心",
+            "isShow": true
+        }
+    ],
+    "nav": {
+        "yxtd": false,
+        "zxdc": false
+    },
+    "caseMenu": [
+        { "name": "网格", "url": ""}, 
+        { "name": "应急", "url": "https://yjglj.shmh.gov.cn/index.html#/pages/task/list?idcode=19921686038" },
+        {"name": "非警情", "url": "https://yjglj.shmh.gov.cn/index.html#/pages/nonpolice/list?idcode=13912546548" }
+    ],
+    "thirdDetail": {
+        "reportUrl": "https://yjglj.shmh.gov.cn/index.html#/pages/emergency/list?idcode=19921686038",
+        "reportTaskUrl": "https://yjglj.shmh.gov.cn/index.html#/pages/task/list?idcode=19921686038",
+        "notPoliceUrl": ""
+    },
+    "hasConsole": [""],
+    "thirdReportUrl": "",
+    "todoList": [
+        {
+            "label": "待核实",
+            "num": 0,
+            "color_bg": "#f4f8ff",
+            "icon": "dhs",
+            "color": "#5a8ceb",
+            "route": "/dealCase",
+            "query": { "caseType": "待核实" }
+        },
+        {
+            "label": "待核查",
+            "num": 0,
+            "color_bg": "#faf5ff",
+            "icon": "dhc",
+            "color": "#9f69e0",
+            "route": "/dealCase",
+            "query": { "caseType": "待核查" }
+        },
+        {
+            "label": "待接单",
+            "num": 0,
+            "color_bg": "#fff8f9",
+            "icon": "djd",
+            "color": "#f76d93",
+            "route": "/dealCase",
+            "query": { "caseType": "待接单" }
+        },
+        {
+            "label": "待处理",
+            "num": 0,
+            "color_bg": "#f8f8fd",
+            "icon": "dcl",
+            "color": "#8786e1",
+            "route": "/dealCase",
+            "query": { "caseType": "待处理" }
+        },
+        {
+            "label": "待指挥",
+            "num": 0,
+            "color_bg": "#ebfefc",
+            "icon": "dzh",
+            "color": "#35d8c3",
+            "route": "/dealCase",
+            "query": { "caseType": "待指挥" }
+        }
+    ],
+    "yjTodList": [
+        {
+            "label": "应急待办",
+            "num": 0,
+            "color_bg": "#f4f8ff",
+            "icon": "dhs",
+            "color": "#5a8ceb",
+            "route": "/dealCase"
+        },
+        {
+            "label": "非警务处置",
+            "num": 0,
+            "color_bg": "#faf5ff",
+            "icon": "dhc",
+            "color": "#9f69e0",
+            "route": "/dealCase"
+        }
+    ],
+    "isYJ": true
+}

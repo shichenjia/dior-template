@@ -1,0 +1,127 @@
+{
+    "areaCode": "05",
+    "areaName":"长宁",
+    "projectName":"城市网格化管理",
+    "interfaceType":"base",
+    "clientType": "2",
+    "secrets":{
+        "appId":"wwc11834673dba4d44",
+        "agentId":"1000745",
+        "appSecret":"hDBHm1o1LmlGY_UTHxXELOu0tjsE--2hFlji8f0bjbk",
+        "weappAppId": "",
+        "weappAppSecret": "",
+        "zwAppId": "ww4d8c2a7f4f517a13",
+        "zwAppKey": "1001160",
+        "zwAppSecret": "a004dc5396064b48a55a4055acb222bb"
+    },
+    "location":{
+        "flag":true,
+        "time":5
+    },
+    "urls":[
+        { 
+            "govWechat":"https://wghxt.shucm.cn/8071/gov-wechat-cn/",
+            "wxConfing":"https://wghxt.shucm.cn/wechat-api-cn",
+            "ssbConfing": "https://newwghxt.shucm.cn/8071/wechat-java-api",
+            "esUrl": "",
+            "mediaUrl":"https://wghxt.shucm.cn/8071/file-service-cn/", 
+            "mapUrl": "https://gis.shucm.cn/CGGisShare/GisShareApp3D.html?area=cm&cid=NzM3MDg3ZWQwMTUwOTgwMQ==",
+            "dataApi":"数据分析的接口",
+            "deviceApi": "",
+            "messageApi": "",
+            "surveyUrl": "",
+            "yxtdUrl": "",
+            "formIframeUrl": "https://wghxt.shucm.cn/form-cn/#/thirdPage/report?formCode=",
+            "tdMapToken": "https://cimnet.zjw.sh.gov.cn:2008",
+            "updateMapUrl": "https://cimnet.zjw.sh.gov.cn:2008/wghGisService/rest/services/wx/citygisnewquery/FeatureServer/16",
+            "tdMapUrl": "https://gis.shucm.cn/GisShareTdt/GisShareApp3D.html?cid=2c837fd954447cd8b7236758c177b63efd40261bff500e04dd92967295923d6efdb98db6c3711332847b70bb866af7e82b007db83a37a827b5d5751e25cbcaa0db98441d43f03e48af4e0455a01a1f0d38c6b043a713fa8e2f3531cad01fe009d29e198bbd37a1fb2c94d2d13162c676149c9b6b0bd1cc44f1522f382d5d773e"
+        }
+    ],
+    "mapTestUser": [""],
+    "permissions": [
+        {
+            "menuId": "DutyManage",
+            "blackList": [""],
+            "menuName": "勤务管理",
+            "isShow": false
+        },
+        {
+            "menuId": "dealCase",
+            "blackList": ["", ""],
+            "menuName": "案件办理",
+            "isShow": true
+        },
+        {
+            "menuId": "report",
+            "blackList": [""],
+            "menuName": "上报",
+            "isShow": true
+        },
+        {
+            "menuId": "DataBoard",
+            "blackList": [""],
+            "menuName": "数据看板",
+            "isShow": false
+        },
+        {
+            "menuId": "myCase",
+            "blackList": [""],
+            "menuName": "我的案件",
+            "isShow": true
+        }
+    ],
+    "nav": {
+        "yxtd": false,
+        "zxdc": false
+    },
+    "todoList": [
+        {
+            "label": "待核实",
+            "num": 0,
+            "color_bg": "#f4f8ff",
+            "icon": "dhs",
+            "color": "#5a8ceb",
+            "route": "/dealCase",
+            "query": { "caseType": "待核实" }
+        },
+        {
+            "label": "待核查",
+            "num": 0,
+            "color_bg": "#faf5ff",
+            "icon": "dhc",
+            "color": "#9f69e0",
+            "route": "/dealCase",
+            "query": { "caseType": "待核查" }
+        },
+        {
+            "label": "待接单",
+            "num": 0,
+            "color_bg": "#fff8f9",
+            "icon": "djd",
+            "color": "#f76d93",
+            "route": "/dealCase",
+            "query": { "caseType": "待接单" }
+        },
+        {
+            "label": "待处理",
+            "num": 0,
+            "color_bg": "#f8f8fd",
+            "icon": "dcl",
+            "color": "#8786e1",
+            "route": "/dealCase",
+            "query": { "caseType": "待处理" }
+        },
+        {
+            "label": "待指挥",
+            "num": 0,
+            "color_bg": "#ebfefc",
+            "icon": "dzh",
+            "color": "#35d8c3",
+            "route": "/dealCase",
+            "query": { "caseType": "待指挥" }
+        }
+    ],
+    "reportConfirm": true,
+    "hasTransfer": true,
+    "layerName": "农村经营性自建房"
+}

@@ -1,0 +1,129 @@
+{
+    "areaCode": "10",
+    "areaName":"杨浦区",
+    "projectName":"区街一体化",
+    "interfaceType":"base",
+    "clientType": "2",
+    "secrets":{
+        "appId":"wwc11834673dba4d44",
+        "agentId":"1000388",
+        "appSecret":"2o8McADMC7dmc7_gHTU4MV_RdB0wLjxsJGGA2LD_vyM",
+        "ddAppId": "ding4ubvucynhukaclyv",
+        "ddAgentId": "2698124706",
+        "ddCorpId": "dingdf196830d2892468f2c783f7214b6d69",
+        "ddAppSecret": "MPp89yF5wA08jMqALk-TFf8qMJuqkWo6YHZkdPch_7B8n_dsmurebuEX1wzebCVc",
+        "weappAppId": "wxaa103e1ecaebeee0",
+        "weappAppSecret": "5c326b8e22d365c450ff274cd51cc414",
+        "zwAppId": "ww03305c2f6a9dc617", 
+        "zwAppKey": "1001297",
+        "zwAppSecret": "7657d4db27864895b882fcccc45ea133"
+    },
+    "location":{
+        "flag":true,
+        "time":30
+    },
+    "urls":[
+        {
+            "govWechat": "http://180.163.105.207:8010/gov-wechat/",
+            "wxConfing": "http://180.163.105.207:8010/wechat-api",
+            "ssbConfing": "http://180.163.105.207:8010/wechat-java",
+            "mediaUrl": "http://180.163.105.207:8010/file-service",
+            "surveyUrl": "http://180.163.105.207:8010/8010",
+            "mapUrl": "https://gis.shucm.cn/CGGisShare/GisShareApp3D.html?cid=NzM3MDg3ZWQwMTUwOTgwMQ==",
+            "ythbgBaseUrl": "https://ythbgptuat.ywxt.sh.gov.cn/ramos_oauth/jump/wechat?appKey=",
+            "dataApi": "",
+            "deviceApi": "",
+            "tdMapUrl": "https://gis.shucm.cn/GisShareTdt/GisShareApp3D.html?cid=45f8fa40cfa8825ab6d2081ba8c27f30e75f24e8aa5baa3882e81e09bd238a4413a5fbcc13409cf59c1720d8876edc698d776052eaa713a4eb0bcab306ab85a446a035b975e7c7842b4b91b6b07ead4e1d13240b6de141036cc5a7bb10133dd5fd43418419cb2a616597d6424d12bccbcfa1646d53e21fcdf5b9f180dad090cd",
+            "formIframeUrl": "http://180.163.105.207:8010/form/#/thirdPage/report?formCode=",
+            "updateMapUrl": "https://cimnet.zjw.sh.gov.cn:2008/wghGisService/rest/services/wx/citygisnewquery/FeatureServer/16"
+        }
+    ],
+    "permissions": [
+        {
+            "menuId": "DutyManage",
+            "blackList": [""],
+            "menuName": "勤务管理",
+            "isShow": true
+        },
+        {
+            "menuId": "dealCase",
+            "blackList": [""],
+            "menuName": "案件办理",
+            "isShow": true
+        },
+        {
+            "menuId": "report",
+            "blackList": [""],
+            "menuName": "上报",
+            "isShow": true
+        },
+        {
+            "menuId": "DataBoard",
+            "blackList": [""],
+            "menuName": "数据看板",
+            "isShow": true
+        },
+        {
+            "menuId": "myCase",
+            "blackList": [""],
+            "menuName": "我的案件",
+            "isShow": true
+        }
+    ],
+    "nav": {
+        "yxtd": false,
+        "zxdc": true
+    },
+    "zxbaSourceId": "293",
+    "hasConsole": ["13761664721","15921273670"],
+    "mapTestUser": ["19946284340"],
+    "todoList": [
+        {
+            "label": "待核实",
+            "num": 0,
+            "color_bg": "#f4f8ff",
+            "icon": "dhs",
+            "color": "#5a8ceb",
+            "route": "/dealCase",
+            "query": { "caseType": "待核实" }
+        },
+        {
+            "label": "待核查",
+            "num": 0,
+            "color_bg": "#faf5ff",
+            "icon": "dhc",
+            "color": "#9f69e0",
+            "route": "/dealCase",
+            "query": { "caseType": "待核查" }
+        },
+        {
+            "label": "待接单",
+            "num": 0,
+            "color_bg": "#fff8f9",
+            "icon": "djd",
+            "color": "#f76d93",
+            "route": "/dealCase",
+            "query": { "caseType": "待接单" }
+        },
+        {
+            "label": "待处理",
+            "num": 0,
+            "color_bg": "#f8f8fd",
+            "icon": "dcl",
+            "color": "#8786e1",
+            "route": "/dealCase",
+            "query": { "caseType": "待处理" }
+        },
+        {
+            "label": "待指挥",
+            "num": 0,
+            "color_bg": "#ebfefc",
+            "icon": "dzh",
+            "color": "#35d8c3",
+            "route": "/dealCase",
+            "query": { "caseType": "待指挥" }
+        }
+    ],
+    "layerName": "农村经营性自建房",
+    "account": true
+}

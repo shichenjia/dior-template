@@ -1,0 +1,125 @@
+{
+    "areaCode": "01",
+    "areaName":"黄浦区",
+    "projectName":"城市网格化管理",
+    "interfaceType":"base",
+    "clientType": "2",
+    "secrets":{
+        "appId": "wwc11834673dba4d44",
+        "agentId": "1000745",
+        "appSecret": "hDBHm1o1LmlGY_UTHxXELOu0tjsE--2hFlji8f0bjbk",
+        "weappAppId": "",
+        "weappAppSecret": "",
+        "zwAppId": "ww4d8c2a7f4f517a13",
+        "zwAppKey": "1001160",
+        "zwAppSecret": "a004dc5396064b48a55a4055acb222bb"
+    },
+    "location":{
+        "flag":true,
+        "time":5
+    },
+    "urls":[
+        { 
+            "govWechat":"https://wghxt.shucm.cn/8071/gov-wechat-hp/",
+            "wxConfing":"https://wghxt.shucm.cn/wechat-api-hp",
+            "ssbConfing": "https://newwghxt.shucm.cn/8071/wechat-java-api",
+            "esUrl": "",
+            "mediaUrl":"https://wghxt.shucm.cn/8071/file-service-hp/", 
+            "mapUrl": "https://gis.shucm.cn/CGGisShare/GisShareApp3D.html?area=cm&cid=NzM3MDg3ZWQwMTUwOTgwMQ==",
+            "dataApi":"数据分析的接口",
+            "deviceApi": "",
+            "messageApi": "",
+            "surveyUrl": "",
+            "yxtdUrl": "",
+            "updateMapUrl": "https://cimnet.zjw.sh.gov.cn:2008/wghGisService/rest/services/wx/citygisnewquery/FeatureServer/16",
+            "formIframeUrl": "https://wghxt.shucm.cn/form-hp/#/thirdPage/report?formCode=",
+            "tdMapToken": "https://cimnet.zjw.sh.gov.cn:2008",
+            "tdMapUrl": "https://gis.shucm.cn/GisShareTdt/GisShareApp3D.html?cid=49c34ea68f9ea7808f443f8b06e740a09b455dbcd5544b9bc820c9a7a7257e8959b8c1a60886ddf283ac1378f8abf1e091c9cd967076bf31d92a672dec8d0ad0f469386024b87f6c6b20e6c1c480e03abe5f119b5da6b3d0465b5edfa13ec682fbe0e0a7739e7757f0f3d72be9a24099c10964ae73aac7f72f66fba3c5f38710"
+        }
+    ],
+    "mapTestUser": [""],
+    "permissions": [
+        {
+            "menuId": "DutyManage",
+            "blackList": [""],
+            "menuName": "勤务管理",
+            "isShow": false
+        },
+        {
+            "menuId": "dealCase",
+            "blackList": [""],
+            "menuName": "案件办理",
+            "isShow": true
+        },
+        {
+            "menuId": "report",
+            "blackList": [""],
+            "menuName": "上报",
+            "isShow": true
+        },
+        {
+            "menuId": "DataBoard",
+            "blackList": [""],
+            "menuName": "数据看板",
+            "isShow": false
+        },
+        {
+            "menuId": "myCase",
+            "blackList": [""],
+            "menuName": "我的案件",
+            "isShow": true
+        }
+    ],
+    "nav": {
+        "yxtd": false,
+        "zxdc": false
+    },
+    "todoList": [
+        {
+            "label": "待核实",
+            "num": 0,
+            "color_bg": "#f4f8ff",
+            "icon": "dhs",
+            "color": "#5a8ceb",
+            "route": "/dealCase",
+            "query": { "caseType": "待核实" }
+        },
+        {
+            "label": "待核查",
+            "num": 0,
+            "color_bg": "#faf5ff",
+            "icon": "dhc",
+            "color": "#9f69e0",
+            "route": "/dealCase",
+            "query": { "caseType": "待核查" }
+        },
+        {
+            "label": "待接单",
+            "num": 0,
+            "color_bg": "#fff8f9",
+            "icon": "djd",
+            "color": "#f76d93",
+            "route": "/dealCase",
+            "query": { "caseType": "待接单" }
+        },
+        {
+            "label": "待处理",
+            "num": 0,
+            "color_bg": "#f8f8fd",
+            "icon": "dcl",
+            "color": "#8786e1",
+            "route": "/dealCase",
+            "query": { "caseType": "待处理" }
+        },
+        {
+            "label": "待指挥",
+            "num": 0,
+            "color_bg": "#ebfefc",
+            "icon": "dzh",
+            "color": "#35d8c3",
+            "route": "/dealCase",
+            "query": { "caseType": "待指挥" }
+        }
+    ],
+    "layerName": "农村经营性自建房"
+}

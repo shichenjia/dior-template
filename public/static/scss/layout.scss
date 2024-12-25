@@ -1,0 +1,235 @@
+.home-box {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  background-color: #edf0f4;
+  overflow: hidden;
+
+  .router-box {
+    width: 100%;
+    height: calc(100% - 340px);
+    float: left;
+    overflow: auto;
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 440px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/bg.png") no-repeat;
+    background-size: 100% 100%;
+
+    .btn-item-box {
+      width: 20%;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+
+      .icon-box {
+        width: 100%;
+        height: 40%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 0 0;
+
+        &.margin-top {
+          margin-top: 0px;
+        }
+
+        .icon {
+          &.qwgl {
+            width: 104px;
+            height: 104px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/qwgl.png") no-repeat;
+            background-size: 100% 100%;
+          }
+
+          &.ajbl {
+            width: 85px;
+            height: 85px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/dealCase.png") no-repeat;
+            background-size: 100% 100%;
+          }
+
+          &.report {
+            width: 376px;
+            height: 376px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/report.png") no-repeat;
+            background-size: 100% 100%;
+            margin: 0 0 0 0 !important;
+          }
+
+          &.sjkb {
+            width: 97px;
+            height: 94px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/sjkb.png") no-repeat;
+            background-size: 100% 100%;
+          }
+
+          &.case {
+            width: 99px;
+            height: 103px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/myCase.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+
+      .name-box {
+        width: 100%;
+        height: 30px;
+        float: left;
+        font-family: NotoSansCJK-Regular;
+        font-size: $font-size-50;
+        color: $homeTabColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &.select {
+        .icon-box {
+          margin: 20px 0 0 0;
+
+          .icon {
+            &.qwgl {
+              width: 104px;
+              height: 104px;
+              float: left;
+              background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/qwgl-select.png") no-repeat;
+              background-size: 100% 100%;
+            }
+
+            &.ajbl {
+              width: 85px;
+              height: 85px;
+              float: left;
+              background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/dealCase-select.png") no-repeat;
+              background-size: 100% 100%;
+            }
+
+            &.report {
+              width: 376px;
+              height: 376px;
+              float: left;
+              background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/report.png") no-repeat;
+              background-size: 100% 100%;
+              margin: 0 0 0 0 !important;
+            }
+
+            &.sjkb {
+              width: 97px;
+              height: 94px;
+              float: left;
+              background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/sjkb-select.png") no-repeat;
+              background-size: 100% 100%;
+            }
+
+            &.case {
+              width: 99px;
+              height: 103px;
+              float: left;
+              background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/home/myCase-select.png") no-repeat;
+              background-size: 100% 100%;
+            }
+          }
+        }
+
+        .name-box {
+          width: 100%;
+          height: 30px;
+          float: left;
+          font-family: NotoSansCJK-Regular;
+          font-size: $font-size-50;
+          color: #5176bd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .myPopover {
+    width: 1424px;
+    height: 525px;
+    float: left;
+    position: absolute;
+    left: calc(50% - 712px);
+    bottom: 350px;
+    background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/popover/bg.png") no-repeat;
+    background-size: 100% 100%;
+
+    .popover-content {
+      width: 100%;
+      height: 100%;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .popover-item {
+        width: 630px;
+        height: 365px;
+        float: left;
+        margin: 40px 40px;
+        cursor: pointer;
+
+        .top {
+          width: 100%;
+          height: 250px;
+          float: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .quick {
+            width: 180px;
+            height: 180px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/popover/quick.png") no-repeat;
+            background-size: 100% 100%;
+          }
+
+          .report {
+            width: 180px;
+            height: 180px;
+            float: left;
+            background: url("https://zwwx.3h-weixin.com/zwwx-test/static/assets/popover/report.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+
+        .bottom {
+          width: 100%;
+          height: 70px;
+          float: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 50px;
+          font-family: NotoSansCJK-Regular;
+          font-weight: 700;
+          color: #64696f;
+        }
+      }
+    }
+  }
+}

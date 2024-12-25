@@ -1,0 +1,127 @@
+.issueEscalation {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $bgGray;
+
+  .form-box {
+    width: 100%;
+    height: calc(100% - 260px);
+    margin: 0 0 40px 40px;
+    width: calc(100% - 80px);
+    overflow: auto;
+  }
+
+  .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: $white;
+    font-family: 'NotoSansCJK-Regular';
+    box-shadow: 0 0 40px $shadowColor;
+
+    .wrapper {
+      display: flex;
+    }
+    .label {
+      display: flex;
+      color: #a6a6a6;
+      line-height: 160px;
+      text-indent: 20px;
+
+      &.active {
+        color: #0c0c0c;
+      }
+    }
+  }
+
+  .form {
+    flex: 1;
+    margin-top: 40px;
+
+    ::v-deep .van-radio-group {
+      padding: 10px;
+    }
+
+    ::v-deep .van-cell {
+      background-color: #f4f7fc;
+      border-radius: 40px;
+      padding: 40px;
+    }
+
+    ::v-deep .van-cell::after {
+      border-bottom: 0 solid transparent;
+    }
+
+    ::v-deep .titleCard {
+      box-shadow: none;
+      margin-top: 0;
+
+      .title {
+        justify-content: flex-start;
+
+        .title-left {
+          font-size: $font-size-82;
+        }
+
+        .title-right {
+          font-size: $font-size-64;
+          color: $textGray;
+          margin-left: 40px;
+        }
+      }
+
+      &.voice {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  .btn-box {
+    ::v-deep .van-button {
+      background-color: $primary;
+      color: $white;
+      border: 1px solid $primary;
+      padding: 0 30px;
+      height: 35px;
+    }
+  }
+
+  .area {
+    ::v-deep .van-cell__value {
+      background-color: #f4f7fc;
+      padding: 5px;
+    }
+  }
+
+  .recorder {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .ml_50 {
+    margin-left: 20px;
+  }
+
+  .btn-class {
+    background-color: $primary !important;
+    border: 1px solid $primary !important;
+    color: $white !important;
+    width: 585px !important;
+    height: 170px !important;
+    float: left;
+    font-family: 'NotoSansCJK-Regular';
+    margin: 0 20px !important;
+    font-size: $font-size-82;
+    border-radius: 40px;
+
+    &.block {
+      width: 100% !important;
+    }
+  }
+}

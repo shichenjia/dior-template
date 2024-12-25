@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+  <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+  <meta HTTP-EQUIV="expires" CONTENT="0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="<%= BASE_URL %>/static/css/normalize.css">
+  <link rel="stylesheet" href="<%= BASE_URL %>/static/css/common.scss">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=gbcS4dokGolAKESvdtczVGf8ECsQgcTi"></script>
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&type=webgl&ak=gbcS4dokGolAKESvdtczVGf8ECsQgcTi"></script>
+  <script src="https://its.china-gis.com/wxmap/CityGis.Bridge.js"></script>
+</head>
+
+<body touchstart>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
